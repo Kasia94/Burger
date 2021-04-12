@@ -1,17 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <Header/>
+    <Burger/>
+    <Cost/>
+    <Ingredients/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import Burger from './components/Burger.vue'
+import Cost from './components/Cost.vue'
+import Header from './components/Header.vue'
+import Ingredients from './components/Ingredients.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+    Burger,
+    Cost,
+    Header,
+    Ingredients
   }
 }
 </script>
