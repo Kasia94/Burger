@@ -12,10 +12,10 @@
 </template>
  <style>
 .Burger{
-    border: solid pink 3px;
     height: 75vh;
     max-width: 100vh;
     top: 0;
+    margin: auto;
 }
 .Burger__bread-bottom {
     height: 13%;
@@ -29,7 +29,7 @@
     width: 7%;
     height: 8%;
     background-color: white;
-    left: 44%;
+    left: 15%;
     top: 0;
     border-radius: 40%;
     transform: rotate(10deg);
