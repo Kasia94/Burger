@@ -6,8 +6,8 @@
         <div class="Menu__item-value">
           <p>{{ item.value }} szt.</p>
           <div class="Menu__btns">
-          <button class="Menu__btn-value">+</button>
-          <button class="Menu__btn-value">-</button>
+          <button @click="addIngredient(item.name)" class="Menu__btn-value">+</button>
+          <button @click="removeIngredient(item.name)"  class="Menu__btn-value">-</button>
           </div>
         </div>
         <p class="price">{{ item.price }} zł</p>
@@ -26,8 +26,24 @@ export default {
         { name: "bekon", value: 0, price: 1.0 },
         { name: "pomidor", value: 0, price: 0.5 },
       ],
+      item:''
     };
   },
+  methods:{
+addIngredient(name){
+  this.item = this.ingredients.find(i => i.name === name)
+  if (this.item.value >= 5) {
+    return 
+  }
+  this.item.value++
+},
+removeIngredient(name){
+  this.item=this.ingredients.find(i => i.name === name)
+   if (this.item.value <= 0) {
+    return }
+    this.item.value--
+}
+  }
 };
 </script>
 <style lang="css">
