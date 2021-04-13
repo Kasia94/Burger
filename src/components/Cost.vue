@@ -8,7 +8,7 @@ export default {
   },
   props: {
     ingredients: {
-      type: Object,
+      type: Array,
     },
   },
   computed: {
@@ -24,8 +24,6 @@ export default {
 </script>
 <style>
 .cost {
-  position: absolute;
-  top: 80%;
-  left: 45%;
+  margin: auto;
 }
 </style>

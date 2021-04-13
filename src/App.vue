@@ -2,11 +2,12 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-
+<div class="container">
     <Header style="border: 1px solid red" />
-    <Burger />
-    <Cost :ingredients="ingredients"/>
+    <Burger :ingredients="ingredients" />
+    <Cost :ingredients="ingredients" />
     <Ingredients :ingredients="ingredients" />
+</div>
   </div>
 </template>
 
@@ -29,12 +30,13 @@ export default {
   data() {
     return {
       ingredients: [
-        { name: "mięso", value: 0, price: 1.5 },
-        { name: "ser", value: 0, price: 0.5 },
-        { name: "sałata", value: 0, price: 0.2 },
-        { name: "bekon", value: 0, price: 1.0 },
-        { name: "pomidor", value: 0, price: 0.5 },
-      ],
+        { name: "mięso", value: 0, price: 1.5, id:111, className:'meat'},
+        { name: "ser", value: 0, price: 0.5, id:222, className:'cheese'},
+        { name: "sałata", value: 0, price: 0.2, id:333,className:'salad'},
+        { name: "bekon", value: 0, price: 1.0, id:444, className:'becon'},
+        { name: "pomidor", value: 0, price: 0.5, id:555, className:'tomato'},
+        { name: "posypka", value: 0, price: 0.3, id:666, className:'seeds'}
+      ]
     };
   },
 };
@@ -48,5 +50,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  left: 15%;
+  width: 70%;
 }
 </style>

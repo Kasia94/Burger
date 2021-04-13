@@ -26,7 +26,7 @@
 export default {
   props: {
     ingredients: {
-      type: Object,
+      type: Array
     },
   },
 
@@ -57,11 +57,12 @@ export default {
   width: 50%;
   min-width: 270px;
   border-radius: 10%;
+  position: relative;
 }
 .Menu__item {
   display: flex;
   flex-direction: row;
-  height: 8vh;
+  height: 5vh;
   width: 100%;
   align-items: center;
   justify-content: space-around;
