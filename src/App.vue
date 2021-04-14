@@ -34,8 +34,7 @@ export default {
         { name: "ser", value: 0, price: 0.5, id:222, className:'cheese'},
         { name: "sałata", value: 0, price: 0.2, id:333,className:'salad'},
         { name: "bekon", value: 0, price: 1.0, id:444, className:'becon'},
-        { name: "pomidor", value: 0, price: 0.5, id:555, className:'tomato'},
-        { name: "posypka", value: 0, price: 0.3, id:666, className:'seeds'}
+        { name: "pomidor", value: 0, price: 0.5, id:555, className:'tomato'}
       ]
     };
   },

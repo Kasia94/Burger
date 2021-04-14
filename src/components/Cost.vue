@@ -25,5 +25,6 @@ export default {
 <style>
 .cost {
   margin: auto;
+  margin-top: 25px;
 }
 </style>

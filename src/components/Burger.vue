@@ -1,14 +1,13 @@
 <template>
-  <div class="Burger" :style="{ height: `${30 * sum}px`}">
-    <div class="Burger__bread-top" />
+  <div class="Burger" :style="{ height: `${20 * sum}px`}">
+    <div class="Burger__bread-top">
+      <div class="Burger__seeds"></div>
+      <div class="Burger__seeds"></div>
+      <div class="Burger__seeds"></div>
+    </div>
     <template v-for="item in ingredients">
       <div v-for="element in item.value" :key="element.id" 
       :class="`Burger__${item.className}`"></div>
-        <!-- <div class="Burger__meat"/>
-    <div class="Burger__cheese"/>
-    <div class="Burger__salad"/>
-    <div class="Burger__becon"/>
-    <div class="Burger__tomato"/> -->
     </template>
     <div class="Burger__bread-bottom" />
   </div>
@@ -42,7 +41,7 @@ export default {
   position: relative;
 }
 .Burger__bread-bottom {
-  height: 40px;
+  height: 20px;
   width: 80%;
   background: linear-gradient(#f08e4a, #e27b36);
   border-radius: 0 0 30px 30px;
@@ -51,25 +50,27 @@ export default {
 }
 .Burger__seeds {
   display: inline-block;
-  width: 7%;
-  height: 8%;
+  width: 15%;
+  height: 20%;
   background-color: white;
   border-radius: 40%;
   transform: rotate(10deg);
   box-shadow: inset -3px 0 #c9c9c9;
-  position: absolute;
-  top: 90px
+   z-index: 2;
+  /* margin-top: 10px;
+  transform:  translateY(-30px); */
 }
 
 .Burger__bread-top {
-  height: 20%;
+  height: 20px;
   width: 80%;
   background: linear-gradient(#bc581e, #e27b36);
   border-radius: 50% 50% 0 0;
   box-shadow: inset -15px 0 #c15711;
   margin: 2% auto;
   position: relative;
-  top: 15%;
+  margin-bottom: 2px;
+  
 }
 .Burger__meat {
   width: 80%;
