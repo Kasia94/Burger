@@ -17,7 +17,7 @@
             </button>
           </div>
         </div>
-        <p class="price">{{ item.price }} zł</p>
+        <p class="price">{{ formatPrice(item.price) }}ś</p>
       </li>
     </ul>
   </div>
@@ -26,7 +26,7 @@
 export default {
   props: {
     ingredients: {
-      type: Array
+      type: Array,
     },
   },
 
@@ -44,6 +44,13 @@ export default {
         return;
       }
       item.value--;
+    },
+    formatPrice(value) {
+    let newFormat= new Intl.NumberFormat("pl-PL", {
+        style: "currency",
+        currency: "PLN",
+      }).format(value);
+      return newFormat;
     },
   },
 };

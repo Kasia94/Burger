@@ -17,7 +17,7 @@ export default {
       this.ingredients.forEach((element) => {
         cost += element.value * element.price;
       });
-      return cost
+      return cost.toFixed(2)
     },
   },
 };
