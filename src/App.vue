@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 <div class="container">
     <Header style="border: 1px solid red" />
     <Burger :ingredients="ingredients" />
@@ -12,7 +10,7 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+
 import Burger from "./components/Burger.vue";
 import Cost from "./components/Cost.vue";
 import Header from "./components/Header.vue";
@@ -21,7 +19,6 @@ import Ingredients from "./components/Ingredients.vue";
 export default {
   name: "App",
   components: {
-    // HelloWorld
     Burger,
     Cost,
     Header,

@@ -17,7 +17,7 @@
             </button>
           </div>
         </div>
-        <p class="price">{{ formatPrice(item.price) }}ś</p>
+        <p class="price">{{ formatPrice(item.price) }}</p>
       </li>
     </ul>
   </div>
@@ -64,7 +64,13 @@ export default {
   width: 50%;
   min-width: 270px;
   border-radius: 10%;
-  position: relative;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 8px 8px white inset;
+  filter: drop-shadow( 0 0 0.75rem rgb(228, 159, 69));
+
 }
 .Menu__item {
   display: flex;

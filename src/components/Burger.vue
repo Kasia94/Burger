@@ -32,11 +32,10 @@ export default {
 </script>
  <style>
 .Burger {
-  /* height: 52vh; */
   width: 80vh;
   max-width: 100vh;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 300px;
   margin-top: auto;
   position: relative;
 }
