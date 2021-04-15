@@ -35,7 +35,7 @@ export default {
   width: 80vh;
   max-width: 100vh;
   margin: auto;
-  margin-bottom: 300px;
+  margin-bottom: 400px;
   margin-top: auto;
   position: relative;
 }

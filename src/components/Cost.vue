@@ -25,7 +25,9 @@ export default {
 <style>
 .cost {
   margin: auto;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  position: fixed;
+ left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
 }
 </style>
